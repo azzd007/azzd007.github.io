@@ -25,7 +25,7 @@
   3. content，必填，定义name、http-equiv的值对，
   4. scheme，指定要用来翻译属性值的方案
   -->
-  <title>绿点客户端JS能力测试</title>
+  <title>JS能力测试</title>
   <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
 	.en-markup-crop-options {
 		top: 18px !important;
@@ -59,58 +59,20 @@
 				<!-- contenteditable属性用来表示当前元素是否可编辑，ture表示可以，false表示不可以 -->
 				是<input name="shareradio" value="0" type="radio">&nbsp;&nbsp;&nbsp;
 				否<input name="shareradio" value="1" checked="checked" type="radio">
-				<!-- <input> 标签规定用户可输入数据的输入字段。
-				相关属性：
-				type元素类型
-					button按钮
-					checkbox多选框
-					date日期
-					datetime日期
-					datetime-local本地时间
-					email
-					file文档
-					hidden
-					image映像
-					month月
-					number数字
-					password密码
-					radio单选框
-					range
-					reset
-					submit
-					text文本
-					time时间
-					url超链接
-				value
-				width字段宽度
-				src图像的URL
-				name规定 input 元素的名称。用于在提交表单时搜集字段的值。
-				form规定输入字段所属的一个或多个表单。
-				accept规定可通过文件上传控件提交的文件类型。（仅适用于 type="file"），如需规定多个 MIME 类型，请使用逗号分隔这些类型。
-				min规定输入字段的最小值。
-				max规定输入字段的最大值。
-				required输入字段值必须的
-				readonly字段值无法修改
-				placeholder输入文字的提示
-				pattern规定输入字段的值的模式或格式。例如 pattern="[0-9]" 表示输入值必须是 0 与 9 之间的数字。
-					week-->
 			</li>
 			<li>
 				<p accesskey="t">0. 客户端初始化调用--V4.0 新增</p>
 				<!-- accesskey属性用来规定元素的快捷键，调方式为alt+设定快捷键 -->
 				<p id="init_success" tabindex="1"></p>
-				<!-- tabindex属性规定元素的 tab 键控制次序,以下元素支持 tabindex 属性：<a>, <area>, <button>, <input>, <object>, <select> 以及 <textarea>。 -->
 			</li>
 			<li class="native">
 				<p>11.native-手机振动</p>
 				<p id="playSound_success"></p>
 				<p class="code" id="playSound">手机振动</p>
-				<!-- class 属性规定元素的类名。但不能在以下元素中使用：base, head, html, meta, param, script, style 以及 title。 -->
 			</li>
 			<li class="native">
 				<p>26.native-新手引导</p>
 				<p id="newGuide_success"></p>
-				<!-- id 属性规定 HTML 元素的唯一的 id。在 HTML 文档中必须是唯一的。 -->
 				<p class="code" id="newGuide">新手引导</p>
 			</li>
 			<li>
@@ -133,7 +95,6 @@
 				<p>25.native-字符加密</p>
 				<p id="encryptString_success"></p>
 				<p>只要响应有加密字符串即可</p>
-				<!-- <p>请输入需要加密的字符串：</p> -->
 				<input id="encryptString_str" value="请输入被加密内容" type="text">
 				<p class="code" id="encryptString">加密</p>
 			</li>
@@ -1130,8 +1091,9 @@
 	</div>
 
 <!--<script type="text/javascript" src="../js/public/vconsole.min.js" ></script>-->
-<script type="text/javascript" src="./leadeon.js"></script>
-<script type="text/javascript" src="./jquery.min.js"></script>
+<script src="./leadeon.js"></script>
+<script src="./jquery.min.js"></script>
+<script src="index.js"></script>
 <script>
 	// 查找元素	getElementsByTagName
 	// 查找id	getElementById
