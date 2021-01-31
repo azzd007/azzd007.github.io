@@ -123,7 +123,9 @@
 		"openLivePlayback",//直播回放-V6.5新增
 		"getFileDiskInfo",//和彩云SDK获取个人云空间 -V6.6 新增
 		"getFamilyDiskInfo",//和彩云SDK获取家庭云空间 -V6.6 新增
-		"queryUserBenefits"//和彩云SDK获取用户权益 -V6.6 新增
+		"queryUserBenefits",//和彩云SDK获取用户权益 -V6.6 新增
+		"pauseVolumeWhenPageDisappear",//页面不可见时暂停声音-V6.6 新增
+		"arForHtml5"//ar活动页面调用
 	];
 
 	/**
