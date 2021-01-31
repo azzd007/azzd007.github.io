@@ -1650,7 +1650,34 @@ $(function(){
 			}
 		});
 	});
-	
+	//页面不可见时暂停声音-V6.6 新增
+			$("#pauseVolumeWhenPageDisappear").fastClick(function () {
+				leadeon.pauseVolumeWhenPageDisappear({
+					debug: debugMode, //调试模式
+					success: function (datas) {
+						$("#pauseVolumeWhenPageDisappear_success").html('<div class="pre"><pre>' + JSON.stringify(
+							datas, null, 2) + '</pre></div>');
+					},
+					error: function (datas) {
+						$("#pauseVolumeWhenPageDisappear_success").html('<div class="pre"><pre>' + JSON.stringify(
+							datas, null, 2) + '</pre></div>');
+					}
+				});
+			});
+			//Ar活动页面调用-V6.7 新增
+			$("#arForHtml5").fastClick(function () {
+				leadeon.arForHtml5({
+					debug: debugMode, //调试模式
+					success: function (datas) {
+						$("#arForHtml5_success").html('<div class="pre"><pre>' + JSON.stringify(
+							datas, null, 2) + '</pre></div>');
+					},
+					error: function (datas) {
+						$("#arForHtml5_success").html('<div class="pre"><pre>' + JSON.stringify(
+							datas, null, 2) + '</pre></div>');
+					}
+				});
+			});
 	//语音识别（无界面） -V5.6 新增
 	$("#newVoiceRecognizer").fastClick(function () {
 				var time = $("#newVoiceRecognizer_time").val();
