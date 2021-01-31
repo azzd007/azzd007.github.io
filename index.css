@@ -103,13 +103,13 @@ li	{
             line-height: 60px;
             color:#333;
         }
-        /* 设置div内容的基础样式 隐藏内容div
+        /* 设置div内容的基础样式 隐藏内容div*/
         input+label+div{
             display:none;
             position: absolute;
             left:0;
             top:60px;
-        }*/
+        }
         /* input选中状态时候对应的label的样式 */
         input:checked+label{
             background: #333333;
@@ -141,12 +141,12 @@ li	{
 			float: left;
 		} */
 	.img{
-			width: 15px;
-			height: 15px;
+			width: 30px;
+			height: 30px;
 		}
 	.bigPic{
-			width: 15px;
-			height: 15px;
+			width: 30px;
+			height: 30px;
 		}
 	.ComboBox{
 			background-color: #F0FFFF;
